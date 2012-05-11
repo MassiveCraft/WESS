@@ -1,0 +1,8 @@
+name: wess
+version: 1.1.0
+main: com.massivecraft.wess.P
+depend: [mcore3]
+permissions:
+  wess.do:
+    description: WE-save with name from sign
+    default: false
