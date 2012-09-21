@@ -12,7 +12,6 @@ import com.massivecraft.mcore4.cmd.MCommand;
 import com.massivecraft.mcore4.cmd.req.ReqHasPerm;
 import com.massivecraft.mcore4.util.Txt;
 
-
 public class CmdWess extends MCommand
 {
 	public P p;
