@@ -1,6 +1,6 @@
 package com.massivecraft.wess;
 
-import com.massivecraft.mcore4.MPlugin;
+import com.massivecraft.mcore5.MPlugin;
 
 public class P extends MPlugin
 {
