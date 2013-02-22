@@ -22,7 +22,7 @@ public class P extends MPlugin
 		
 		// Add Base Commands
 		this.cmdWess = new CmdWess();
-		this.cmdWess.register();
+		this.cmdWess.register(this);
 		
 		postEnable();
 	}

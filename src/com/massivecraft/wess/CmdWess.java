@@ -14,21 +14,13 @@ import com.massivecraft.mcore5.util.Txt;
 
 public class CmdWess extends MCommand
 {
-	public P p;
 	public CmdWess()
 	{
 		super();
-		this.p = P.p;
 		
 		this.addAliases("ss", "wess");
 		
 		this.addRequirements(new ReqHasPerm(Permission.DO.node));
-	}
-	
-	@Override
-	public P p()
-	{
-		return P.p;
 	}
 
 	@Override
