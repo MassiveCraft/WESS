@@ -1,8 +1,46 @@
+main: com.massivecraft.wess.Wess
 name: wess
-version: 1.1.1
-main: com.massivecraft.wess.P
+version: 1.2.0
+website: http://massivecraft.com/
+authors: [Cayorion]
+description: §eWESS provides one command only. This command will trigger a world edit schematic save using the text on the sign you are currently facing as the name. §aCayorion §efrom the minecraft server §aMassiveCraft §eis the lead programmer. Feel free to visit us at §bhttp://massivecraft.com
 depend: [mcore]
 permissions:
-  wess.do:
-    description: WE-save with name from sign
+# -------------------------------------------- #
+# THE REAL NODES
+# -------------------------------------------- #
+  wess.wess: {description: WE-save with name from sign, default: false}
+# -------------------------------------------- #
+# STAR NOTATION
+# -------------------------------------------- #
+  wess.*:
     default: false
+    children:
+      wess.wess: true
+# -------------------------------------------- #
+# KITS
+# -------------------------------------------- #
+  wess.kit.operator:
+    default: op
+    children:
+      wess.*: true
+  wess.kit.rank3:
+    default: false
+    children:
+      wess.kit.rank2: true
+  wess.kit.rank2:
+    default: false
+    children:
+      wess.kit.rank1: true
+  wess.kit.rank1:
+    default: false
+    children:
+      wess.kit.rank0: true
+      wess.wess: true
+  wess.kit.rank0:
+    default: false
+    children:
+  wess.kit.default:
+    default: true
+    children:
+      wess.kit.rank0: true
