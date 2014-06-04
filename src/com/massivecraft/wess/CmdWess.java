@@ -8,11 +8,11 @@ import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.util.BlockIterator;
 
-import com.massivecraft.mcore.cmd.MCommand;
-import com.massivecraft.mcore.cmd.req.ReqHasPerm;
-import com.massivecraft.mcore.util.Txt;
+import com.massivecraft.massivecore.cmd.MassiveCommand;
+import com.massivecraft.massivecore.cmd.req.ReqHasPerm;
+import com.massivecraft.massivecore.util.Txt;
 
-public class CmdWess extends MCommand
+public class CmdWess extends MassiveCommand
 {
 	// -------------------------------------------- //
 	// CONSTRUCT

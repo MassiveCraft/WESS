@@ -1,8 +1,8 @@
 package com.massivecraft.wess;
 
-import com.massivecraft.mcore.MPlugin;
+import com.massivecraft.massivecore.MassivePlugin;
 
-public class Wess extends MPlugin
+public class Wess extends MassivePlugin
 {
 	// -------------------------------------------- //
 	// INSTANCE & CONSTRUCT
