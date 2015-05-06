@@ -31,7 +31,7 @@ public class Wess extends MassivePlugin
 		
 		// Commands
 		this.cmdWess = new CmdWess();
-		this.cmdWess.register();
+		this.cmdWess.register(this);
 		
 		postEnable();
 	}
