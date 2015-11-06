@@ -8,8 +8,8 @@ import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.util.BlockIterator;
 
-import com.massivecraft.massivecore.cmd.MassiveCommand;
-import com.massivecraft.massivecore.cmd.req.ReqHasPerm;
+import com.massivecraft.massivecore.command.MassiveCommand;
+import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
 import com.massivecraft.massivecore.util.Txt;
 
 public class CmdWess extends MassiveCommand
@@ -24,7 +24,7 @@ public class CmdWess extends MassiveCommand
 		this.addAliases("ss", "wess");
 		
 		// Requirements
-		this.addRequirements(new ReqHasPerm(Perm.WESS.node));
+		this.addRequirements(new RequirementHasPerm(Perm.WESS.node));
 	}
 
 	// -------------------------------------------- //

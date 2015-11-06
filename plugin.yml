@@ -1,9 +1,9 @@
 main: com.massivecraft.wess.Wess
 name: wess
 version: 1.2.0
-website: http://massivecraft.com/
+website: https://www.massivecraft.com/
 authors: [Cayorion]
-description: §eWESS provides one command only. This command will trigger a world edit schematic save using the text on the sign you are currently facing as the name. §aCayorion §efrom the minecraft server §aMassiveCraft §eis the lead programmer. Feel free to visit us at §bhttp://massivecraft.com
+description: §eWESS provides one command only. This command will trigger a world edit schematic save using the text on the sign you are currently facing as the name. §aCayorion §efrom the minecraft server §aMassiveCraft §eis the lead programmer. Feel free to visit us at §bhttps://www.massivecraft.com
 depend: [MassiveCore]
 permissions:
 # -------------------------------------------- #
