@@ -13,27 +13,17 @@ public class Wess extends MassivePlugin
 	public Wess() { Wess.i = this; }
 	
 	// -------------------------------------------- //
-	// FIELDS
-	// -------------------------------------------- //
-	
-	// Commands
-	private CmdWess cmdWess;
-	public CmdWess getCmdWess() { return this.cmdWess; }
-	
-	// -------------------------------------------- //
 	// OVERRIDE
 	// -------------------------------------------- //
 	
 	@Override
-	public void onEnable()
+	public void onEnableInner()
 	{
-		if ( ! preEnable()) return;
-		
-		// Commands
-		this.cmdWess = new CmdWess();
-		this.cmdWess.register(this);
-		
-		postEnable();
+		// Activate
+		this.activate(
+			// Command
+			CmdWess.get()
+		);
 	}
 	
 }

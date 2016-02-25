@@ -15,6 +15,13 @@ import com.massivecraft.massivecore.util.Txt;
 public class CmdWess extends MassiveCommand
 {
 	// -------------------------------------------- //
+	// INSTANCE
+	// -------------------------------------------- //
+	
+	private static CmdWess i = new CmdWess();
+	public static CmdWess get() { return i; }
+	
+	// -------------------------------------------- //
 	// CONSTRUCT
 	// -------------------------------------------- //
 	
