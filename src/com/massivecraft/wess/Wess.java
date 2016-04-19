@@ -22,7 +22,7 @@ public class Wess extends MassivePlugin
 		// Activate
 		this.activate(
 			// Command
-			CmdWess.get()
+			CmdWess.class
 		);
 	}
 	
