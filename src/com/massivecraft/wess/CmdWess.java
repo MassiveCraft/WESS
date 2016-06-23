@@ -31,7 +31,7 @@ public class CmdWess extends MassiveCommand
 		this.addAliases("ss", "wess");
 		
 		// Requirements
-		this.addRequirements(new RequirementHasPerm(Perm.WESS.node));
+		this.addRequirements(new RequirementHasPerm(Perm.WESS));
 	}
 
 	// -------------------------------------------- //

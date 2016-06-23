@@ -1,16 +1,17 @@
 package com.massivecraft.wess;
 
-import org.bukkit.command.CommandSender;
+import org.bukkit.permissions.Permissible;
 
+import com.massivecraft.massivecore.Identified;
 import com.massivecraft.massivecore.util.PermissionUtil;
 
-public enum Perm
+public enum Perm implements Identified
 {
 	// -------------------------------------------- //
 	// ENUM
 	// -------------------------------------------- //
 	
-	WESS("wess"),
+	WESS,
 	
 	// END OF LIST
 	;
@@ -19,29 +20,30 @@ public enum Perm
 	// FIELDS
 	// -------------------------------------------- //
 	
-	public final String node;
+	private final String id;
+	@Override public String getId() { return this.id; }
 	
 	// -------------------------------------------- //
 	// CONSTRUCT
 	// -------------------------------------------- //
 	
-	Perm(final String permissionNode)
+	Perm()
 	{
-		this.node = "wess."+permissionNode;
+		this.id = PermissionUtil.createPermissionId(Wess.get(), this);
     }
 	
 	// -------------------------------------------- //
 	// HAS
 	// -------------------------------------------- //
 	
-	public boolean has(CommandSender sender, boolean informSenderIfNot)
+	public boolean has(Permissible permissible, boolean verboose)
 	{
-		return PermissionUtil.hasPermission(sender, this.node, informSenderIfNot);
+		return PermissionUtil.hasPermission(permissible, this, verboose);
 	}
 	
-	public boolean has(CommandSender sender)
+	public boolean has(Permissible permissible)
 	{
-		return has(sender, false);
+		return PermissionUtil.hasPermission(permissible, this);
 	}
 	
 }
