@@ -2,15 +2,15 @@ package com.massivecraft.wess;
 
 import com.massivecraft.massivecore.MassivePlugin;
 
-public class Wess extends MassivePlugin
+public class WESS extends MassivePlugin
 {
 	// -------------------------------------------- //
 	// INSTANCE & CONSTRUCT
 	// -------------------------------------------- //
 	
-	private static Wess i;
-	public static Wess get() { return i; }
-	public Wess() { Wess.i = this; }
+	private static WESS i;
+	public static WESS get() { return i; }
+	public WESS() { WESS.i = this; }
 	
 	// -------------------------------------------- //
 	// OVERRIDE

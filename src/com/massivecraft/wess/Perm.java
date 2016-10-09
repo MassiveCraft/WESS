@@ -29,8 +29,8 @@ public enum Perm implements Identified
 	
 	Perm()
 	{
-		this.id = PermissionUtil.createPermissionId(Wess.get(), this);
-    }
+		this.id = PermissionUtil.createPermissionId(com.massivecraft.wess.WESS.get(), this);
+	}
 	
 	// -------------------------------------------- //
 	// HAS
