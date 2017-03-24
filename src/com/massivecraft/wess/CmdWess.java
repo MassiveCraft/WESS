@@ -1,16 +1,15 @@
 package com.massivecraft.wess;
 
-import java.util.Iterator;
-
+import com.massivecraft.massivecore.command.MassiveCommand;
+import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
+import com.massivecraft.massivecore.util.Txt;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.util.BlockIterator;
 
-import com.massivecraft.massivecore.command.MassiveCommand;
-import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
-import com.massivecraft.massivecore.util.Txt;
+import java.util.Iterator;
 
 public class CmdWess extends MassiveCommand
 {
