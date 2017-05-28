@@ -1,8 +1,9 @@
-package com.massivecraft.wess;
+package com.massivecraft.wess.cmd;
 
 import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
 import com.massivecraft.massivecore.util.Txt;
+import com.massivecraft.wess.Perm;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;

@@ -20,10 +20,7 @@ public class WESS extends MassivePlugin
 	public void onEnableInner()
 	{
 		// Activate
-		this.activate(
-			// Command
-			CmdWess.class
-		);
+		this.activateAuto();
 	}
 	
 }
