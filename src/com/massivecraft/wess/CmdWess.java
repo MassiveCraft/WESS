@@ -2,6 +2,7 @@ package com.massivecraft.wess;
 
 import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
+import com.massivecraft.massivecore.mixin.MixinMessage;
 import com.massivecraft.massivecore.util.Txt;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -85,7 +86,8 @@ public class CmdWess extends MassiveCommand
 		
 		if (ret == null && verboose)
 		{
-			player.sendMessage(Txt.parse("<b>You are not facing any sign :/"));
+			String message = Txt.parse("<b>You are not facing any sign :/");
+			MixinMessage.get().messageOne(player, message);
 		}
 		
 		return ret;
